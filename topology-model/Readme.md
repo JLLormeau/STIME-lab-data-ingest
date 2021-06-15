@@ -27,7 +27,7 @@ The entity will be automatically discoverd every time the dataingest starts with
 
 - Result with the API **GET entityTypes** for `logistics:truck` 
   
-      https://<MyTenant>/api/v2/entityTypes/logistics:truck?Api-Token=<MyToken>
+      https://<MyTenant>/api/v2/entityTypes/<user>:logistics:truck?Api-Token=<MyToken>
     
     ![image](https://user-images.githubusercontent.com/40337213/121267864-24ff0900-c8bd-11eb-891c-44d52c062276.png) 
 
