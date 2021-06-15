@@ -33,9 +33,9 @@ The metric is collected in Dynatrace but is not attached to the topology model.
 
       export Host_AG=<Host_AG>
       export MyToken=<MyToken>
-      export Prefix=<userXX>
-            
-      export TenantId=<TenantId>  
+      export TenantId=<TenantId>
+      export Prefix=<userXX>       
+      
       export URL_AG=https://$Host_AG:9999/e/$TenantId/api/v2/metrics/ingest
       export Header="Content-Type: text/plain; charset=utf-8"
       export Metric=$Prefix".demo2.truck.fuel.total,trucknr=02,model=mac-conrock 10435"
