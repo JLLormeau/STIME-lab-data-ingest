@@ -45,7 +45,8 @@ Afer a few minutes, the **CUSTOM_DEVICE** attached to the metric appears in this
     create entity = `<user>:logistics:container`  
     dimension for the extraction rules = `containernr`  
     source ingest for the mapping  = satrt with `container.`temperature,containernr=234321,trucknr=99 40
-    
+ ![image](https://user-images.githubusercontent.com/40337213/122076977-a09c1100-cdfb-11eb-9fad-52161e547912.png)
+  
 - Specify its extraction rules `containernr`,  
 ![image](https://user-images.githubusercontent.com/40337213/121263992-bf0f8300-c8b6-11eb-9efb-027360704b55.png)
   
