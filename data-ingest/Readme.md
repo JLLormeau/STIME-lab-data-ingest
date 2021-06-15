@@ -7,9 +7,10 @@ In this lab you will manually ingest data with different entry point : Dynatrace
 
       export MyTenant=<MyTenant>
       export MyToken=<MyToken>
+      export Prefix=<userXX>
+      
       export URL_DT=https://$MyTenant/api/v2/metrics/ingest
       export Header="Content-Type: text/plain; charset=utf-8"
-      export Prefix=<userXX>
       export Metric=$Prefix".demo1.truck.fuel.total,trucknr=01,model=mac-dump 10534"
 
 
@@ -30,12 +31,14 @@ The metric is collected in Dynatrace but is not attached to the topology model.
 ## Entry point = ActiveGate 
 - Export the variables
 
+      export MyTenant=<MyTenant>
       export MyToken=<MyToken>
-      export Host_AG=<Host_AG>
+      export Prefix=<userXX>
+      
       export TenantId=<TenantId>  
       export URL_AG=https://$Host_AG:9999/e/$TenantId/api/v2/metrics/ingest
       export Header="Content-Type: text/plain; charset=utf-8"
-      export Metric="demo2.truck.fuel.total,trucknr=02,model=mac-conrock 10435"
+      export Metric=$Prefix".demo2.truck.fuel.total,trucknr=02,model=mac-conrock 10435"
 
    For Saas **TenantId** is `1234`.live.dynatrace.com - for Managed **TenantId** is xyz.dynatrace-managed.com/e/`0123456789-abcd-987654321`
 
@@ -59,9 +62,11 @@ It's exatly the same type of result as the previous exercise.
 
 - Export the variables
 
+      export Prefix=<userXX>
+      
       export URL_OA=http://localhost:14499/metrics/ingest
       export Header="Content-Type: text/plain; charset=utf-8"
-      export Metric="demo3.truck.fuel.total,trucknr=03,model=mac-lrvsw 10635"
+      export Metric=$Prefix".demo3.truck.fuel.total,trucknr=03,model=mac-lrvsw 10635"
 
 - Run the data ingest
 
@@ -116,6 +121,7 @@ There are many entities you can use like that :
       dt.entity.custom_device
       dt.entity.custom_device_group
       dt.entity.aws_load_balancer
+      ....
 
 
 ## Create `automatically` the topology model
@@ -128,6 +134,7 @@ To start this exercise, we will generate a data stream with a shell script :
 
       export MyToken=<MyToken>
       export MyTenant=<MyTenant>
+      export Prefix=<userXX>
 
 - Run the script
 
