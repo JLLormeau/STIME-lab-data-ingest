@@ -9,7 +9,7 @@ In this lab you will manually ingest data with different entry point : Dynatrace
       export MyToken=<MyToken>
       export URL_DT=https://$MyTenant/api/v2/metrics/ingest
       export Header="Content-Type: text/plain; charset=utf-8"
-      export Prefix=<demoXX>
+      export Prefix=<userXX>
       export Metric=$Prefix".demo1.truck.fuel.total,trucknr=01,model=mac-dump 10534"
 
 
