@@ -110,7 +110,7 @@ In this section, we will do it with an hostid an after a manually created custom
   to create a custom devive, open 3technologie" and clic on "Custom Device" + [...] + New Custom Device
   ![image](https://user-images.githubusercontent.com/40337213/120234328-06af6280-c258-11eb-9b8e-cb21c0e6bcea.png)
 
-      curl -H "Authorization: Api-Token "$Api-Token"" -X POST -H "$Header" --data-ascii "$Metric" "$URL_DT"
+      curl -H "Authorization: Api-Token "$MyToken"" -X POST -H "$Header" --data-ascii "$Metric" "$URL_DT"
 
 There are many entities you can use like that : 
 
