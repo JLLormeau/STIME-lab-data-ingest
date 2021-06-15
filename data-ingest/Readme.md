@@ -92,7 +92,7 @@ In this section, we will do it with an hostid an after a manually created custom
 - **hostid**
             
       export HostId=<HOST-XXXXXXXX>
-      export Metric=$Prefix".dmo4.truck.fuel.total,dt.entity.host"$HostId",trucknr=04,model=mac-titan 12034"
+      export Metric=$Prefix".dmo4.truck.fuel.total,dt.entity.host="$HostId",trucknr=04,model=mac-titan 12034"
 
   to obtain the value of the HOST-XXXX, click on the Host on Dynatarce and find the HOST-XXXXX directly in the URL parameters:  
   ![image](https://user-images.githubusercontent.com/40337213/120121394-7ca5c200-c1a3-11eb-80c2-e081ae6cbde5.png)
