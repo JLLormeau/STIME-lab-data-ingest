@@ -143,7 +143,7 @@ To start this exercise, we will generate a data stream with a shell script :
 
       cd ~
       git clone https://github.com/JLLormeau/STIME-lab-data-ingest
-      cd easy-data-ingest
+      cd STIME-lab-data-ingest
       chmod +x data-ingest-easy-shipping-ltd.sh
       ./data-ingest-easy-shipping-ltd.sh &
 
