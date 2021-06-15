@@ -103,7 +103,7 @@ In this section, we will do it with an hostid an after a manually created custom
 
    Create manually your own custom device and attach the metric to it : 
 
-      export Metric="demo5.truck.fuel.total,dt.entity.custom_device=CUSTOM_DEVICE-XXXXXXXX,trucknr=05,model=mac-anthem 9432"
+      export Metric=$Prefix".demo5.truck.fuel.total,dt.entity.custom_device=CUSTOM_DEVICE-XXXXXXXX,trucknr=05,model=mac-anthem 9432"
   
   to create a custom devive, open 3technologie" and clic on "Custom Device" + [...] + New Custom Device
   ![image](https://user-images.githubusercontent.com/40337213/120234328-06af6280-c258-11eb-9b8e-cb21c0e6bcea.png)
