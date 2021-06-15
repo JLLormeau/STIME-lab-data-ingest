@@ -69,6 +69,9 @@ Settings > Topology model > Generic relationships.
 - In this section we are going to create the **relationships** between the truck and the carried container according to the dynatrace documentation : https://www.dynatrace.com/support/help/shortlink/custom-topology#define-entity-relationships
 ![image](https://user-images.githubusercontent.com/40337213/120231485-c947d680-c251-11eb-9a88-2339217ba342.png)
 
+  - Add source of the relationship 
+![image](https://user-images.githubusercontent.com/40337213/122078301-c7a71280-cdfc-11eb-90c7-9a0a3ca46c53.png)
+
 - Add source
 ![image](https://user-images.githubusercontent.com/40337213/121267539-a2764980-c8bc-11eb-985b-5acac8a182b0.png)
 
@@ -76,8 +79,6 @@ Settings > Topology model > Generic relationships.
 ![image](https://user-images.githubusercontent.com/40337213/121267074-e87edd80-c8bb-11eb-981e-a607cfe20fe8.png)
 ![image](https://user-images.githubusercontent.com/40337213/122077758-4c456100-cdfc-11eb-9246-e20efef5d404.png)
 
-  - Add source of the relationship 
-![image](https://user-images.githubusercontent.com/40337213/122078301-c7a71280-cdfc-11eb-90c7-9a0a3ca46c53.png)
 
 
 - Result with the API **GET entities** for `<user>:logistics:truck`
