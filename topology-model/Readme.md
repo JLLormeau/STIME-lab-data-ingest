@@ -49,10 +49,13 @@ Afer a few minutes, the **CUSTOM_DEVICE** attached to the metric appears in this
   
 - Specify its extraction rules `containernr`,  
 ![image](https://user-images.githubusercontent.com/40337213/121263992-bf0f8300-c8b6-11eb-9efb-027360704b55.png)
-  
+
+- Configure the data source,  
+![image](https://user-images.githubusercontent.com/40337213/122077243-dc36db00-cdfb-11eb-8fda-c719dc267915.png)
+
 - and specify extraction rules for its attribute `trucknr`.  
 ![image](https://user-images.githubusercontent.com/40337213/120230235-2db56680-c24f-11eb-82c5-d01fb2b1d9f1.png)
-
+  
 - Result
 
 ![image](https://user-images.githubusercontent.com/40337213/121264245-2b8a8200-c8b7-11eb-8bee-4894b503b751.png)
