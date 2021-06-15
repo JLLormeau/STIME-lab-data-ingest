@@ -10,6 +10,7 @@ In this lab you will manually ingest data with different entry point : Dynatrace
       export URL_DT=https://$MyTenant/api/v2/metrics/ingest
       export Header="Content-Type: text/plain; charset=utf-8"
       export Metric="demo1.truck.fuel.total,trucknr=01,model=mac-dump 10534"
+      export Prefix=<demoXX>
 
 - Verify the variables 
 
