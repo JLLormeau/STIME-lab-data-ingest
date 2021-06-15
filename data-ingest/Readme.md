@@ -31,10 +31,10 @@ The metric is collected in Dynatrace but is not attached to the topology model.
 ## Entry point = ActiveGate 
 - Export the variables
 
-      export MyTenant=<MyTenant>
+      export Host_AG=<Host_AG>
       export MyToken=<MyToken>
       export Prefix=<userXX>
-      
+            
       export TenantId=<TenantId>  
       export URL_AG=https://$Host_AG:9999/e/$TenantId/api/v2/metrics/ingest
       export Header="Content-Type: text/plain; charset=utf-8"
