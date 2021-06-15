@@ -1,8 +1,8 @@
 # Topology model
 
 In this lab we will define a [custom toplogy](https://www.dynatrace.com/support/help/shortlink/custom-topology) with these 2 new entities - the metrics will be attached automatically to these entities : 
-  - **Truck**     with entityid = `logistics:truck`
-  - **Container** with entityid = `logistics:container`
+  - **Truck**     with entityid = `<user>:logistics:truck`
+  - **Container** with entityid = `<user>:logistics:container`
  And we wil create a relationship between the truck metrics and the container ship metrics. 
 
 ![image](https://user-images.githubusercontent.com/40337213/120231658-1f1c7e80-c252-11eb-9599-a4f3efe1d06f.png)
@@ -25,16 +25,16 @@ The entity will be automatically discoverd every time the dataingest starts with
 - Save Changes
 ![image](https://user-images.githubusercontent.com/40337213/121260853-2c6ce500-c8b2-11eb-8859-fd6b4323b5de.png)
 
-- Result with the API **GET entityTypes** for `logistics:truck` 
+- Result with the API **GET entityTypes** for `<user>:logistics:truck` 
   
-      https://<MyTenant>/api/v2/entityTypes/logistics:truck?Api-Token=<MyToken>
+      https://<MyTenant>/api/v2/entityTypes/<user>:logistics:truck?Api-Token=<MyToken>
     
     ![image](https://user-images.githubusercontent.com/40337213/121267864-24ff0900-c8bd-11eb-891c-44d52c062276.png) 
 
 
 - Result with the **Metrics**
 
-Afer a few minutes, the **CUSTOM_DEVICE** attached to the metric appears in this view with the entity = logistics.truck
+Afer a few minutes, the **CUSTOM_DEVICE** attached to the metric appears in this view with the entity = <user>:logistics.truck
 ![image](https://user-images.githubusercontent.com/40337213/121261358-ee23f580-c8b2-11eb-8c82-76c71d186415.png)
 
 
@@ -42,7 +42,7 @@ Afer a few minutes, the **CUSTOM_DEVICE** attached to the metric appears in this
 ## Create entity Container
 
 - Repeat for Container metrics with this definition : 
-    create entity = `logistics:container`  
+    create entity = `<user>:logistics:container`  
     dimension for the extraction rules = `containernr`  
     source ingest for the mapping  = satrt with `container.`temperature,containernr=234321,trucknr=99 40
     
@@ -74,9 +74,9 @@ Settings > Topology model > Generic relationships.
 - Add source of the relationship 
 ![image](https://user-images.githubusercontent.com/40337213/121268109-92129e80-c8bd-11eb-971b-83ea982181af.png)
 
-- Result with the API **GET entities** for `logistics:truck`
+- Result with the API **GET entities** for `<user>:logistics:truck`
  
-      https://<MyTenant>/api/v2/entities?pageSize=12000&entitySelector=type(logistics:truck)&Api-Token=<MyToken>
+      https://<MyTenant>/api/v2/entities?pageSize=12000&entitySelector=type(<user>:logistics:truck)&Api-Token=<MyToken>
 
     ![image](https://user-images.githubusercontent.com/40337213/121268163-b40c2100-c8bd-11eb-9207-3b040947a0b2.png)
 
@@ -92,11 +92,11 @@ With the rule to collecte the metrics type `container.`
 And with the rule to collecte the metrics type `truck.`
 ![image](https://user-images.githubusercontent.com/40337213/121264855-211cb800-c8b8-11eb-9695-0fca62a149e0.png)
 
-And add the entity selector role `type(logistics:container),truck("12")`
+And add the entity selector role `type(<user>:logistics:container),truck("12")`
 ![image](https://user-images.githubusercontent.com/40337213/121265364-fb43e300-c8b8-11eb-8835-c36f2b7326fd.png)
 
 - Do the same for the `truck:99`
-Entity selector rule : `type("logistics:container"),truck("99")`
+Entity selector rule : `type("<user>:logistics:container"),truck("99")`
 ![image](https://user-images.githubusercontent.com/40337213/121265737-8fae4580-c8b9-11eb-937a-f2b3be93625d.png)
 
 - Result 
@@ -109,7 +109,7 @@ You can also create an auto tag. More details on the entity selector [here](http
 
  - For `Container 111111`
 
-       type("logistics:container"),entityName.equals("111111")
+       type("<user>:logistics:container"),entityName.equals("111111")
   ![image](https://user-images.githubusercontent.com/40337213/120369070-1770de80-c313-11eb-9690-e4d1e9d5c06e.png)
 
 
