@@ -74,9 +74,11 @@ Settings > Topology model > Generic relationships.
 
 - Create relationship 
 ![image](https://user-images.githubusercontent.com/40337213/121267074-e87edd80-c8bb-11eb-981e-a607cfe20fe8.png)
+![image](https://user-images.githubusercontent.com/40337213/122077758-4c456100-cdfc-11eb-9246-e20efef5d404.png)
 
-- Add source of the relationship 
-![image](https://user-images.githubusercontent.com/40337213/121268109-92129e80-c8bd-11eb-971b-83ea982181af.png)
+  - Add source of the relationship 
+![image](https://user-images.githubusercontent.com/40337213/122078301-c7a71280-cdfc-11eb-90c7-9a0a3ca46c53.png)
+
 
 - Result with the API **GET entities** for `<user>:logistics:truck`
  
