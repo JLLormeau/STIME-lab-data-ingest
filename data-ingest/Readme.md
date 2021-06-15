@@ -5,6 +5,7 @@ In this lab you will manually ingest data with different entry point : Dynatrace
 ## Entry point = Dynatrace Saas or Managed
 - Export the variables
 
+      export NEW_CLI=1
       export MyTenant=<MyTenant>
       export MyToken=<MyToken>
       export URL_DT=https://$MyTenant/api/v2/metrics/ingest
@@ -30,6 +31,7 @@ The metric is collected in Dynatrace but is not attached to the topology model.
 ## Entry point = ActiveGate 
 - Export the variables
 
+      export NEW_CLI=1
       export MyToken=<MyToken>
       export Host_AG=<Host_AG>
       export TenantId=<TenantId>  
@@ -59,6 +61,7 @@ It's exatly the same type of result as the previous exercise.
 
 - Export the variables
 
+      export NEW_CLI=1
       export URL_OA=http://localhost:14499/metrics/ingest
       export Header="Content-Type: text/plain; charset=utf-8"
       export Metric="demo3.truck.fuel.total,trucknr=03,model=mac-lrvsw 10635"
