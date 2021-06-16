@@ -37,4 +37,5 @@ In this lab, we will create our chart with the `Data Explorer`. Go to `Metrics` 
 **OpenTelemetry**: https://www.dynatrace.com/support/help/how-to-use-dynatrace/metrics/metric-ingestion/ingestion-methods/opentelemetry/  
 
 - Create your Own plugin with Extension 2.0 :   
+- 
 **Extension 2.0**: https://www.dynatrace.com/support/help/extend-dynatrace/extensions20/  
